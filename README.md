@@ -9,13 +9,21 @@
 
 **Notes:** Compatible with nodes over version 70001.
 
-## Environment versions
 
+## Environment versions tests
+
+Windows 11
 - cargo 1.78.0 (54d8815d0 2024-03-26)
 - rustc 1.78.0 (9b00956e5 2024-04-29)
 - node v20.13.1
 
+Linux Ubuntu 23.10
+- cargo 1.75.0
+- rustc 1.75.0 (82e1608df 2023-12-21) (built from a source tarball)
+- node v21.6.2
+
 **Notes:** An output log example can be found at `./data/log.txt`.
+
 
 ## Bitcoin commands | TODO for full node
 
