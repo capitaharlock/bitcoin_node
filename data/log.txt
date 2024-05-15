@@ -1,0 +1,109 @@
+cargo run
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running `target\debug\btc_node.exe`
+[2024-05-15 23:28:55][btc_node][INFO] Configuration loaded successfully.
+[2024-05-15 23:28:55][btc_node::network::node][INFO] Trying to connect to 159.89.18.80:8333
+[2024-05-15 23:28:55][btc_node::network::node][INFO] Connected to 159.89.18.80:8333
+[2024-05-15 23:28:55][btc_node::network::handshake][INFO] handshake | Start by sending our version message
+[2024-05-15 23:28:55][btc_node::network::handshake][INFO] handshake | Receive version and services list
+[2024-05-15 23:28:55][btc_node::network::handshake][INFO] handshake | Check if version compatibility: 70015
+[2024-05-15 23:28:55][btc_node::network::handshake][INFO] handshake | Send verack to complete
+[2024-05-15 23:28:55][btc_node::network::handshake][INFO] handshake | End
+[2024-05-15 23:28:55][btc_node::protocol::messages][INFO] Command: ping
+Payload: ..T...}.
+[2024-05-15 23:28:55][btc_node::protocol::messages][INFO] Command: addr
+Payload: Q.}...)Ef.....................Y
+[2024-05-15 23:29:25][btc_node::network::connection][ERROR] Failed to read messages: Timeout Error: Read operation timed out
+[2024-05-15 23:29:25][btc_node::network::node][ERROR] Error handling connection to 159.89.18.80: 8333: Timeout Error: Read operation timed out
+[2024-05-15 23:29:25][btc_node::network::node][INFO] Sleeping for 5 seconds before connection to another node
+[2024-05-15 23:29:30][btc_node::network::node][INFO] Trying to connect to 143.110.238.129:8333
+[2024-05-15 23:29:30][btc_node::network::node][INFO] Connected to 143.110.238.129:8333
+[2024-05-15 23:29:30][btc_node::network::handshake][INFO] handshake | Start by sending our version message
+[2024-05-15 23:29:30][btc_node::network::handshake][INFO] handshake | Receive version and services list
+[2024-05-15 23:29:30][btc_node::network::handshake][INFO] handshake | Check if version compatibility: 70015
+[2024-05-15 23:29:30][btc_node::network::handshake][INFO] handshake | Send verack to complete
+[2024-05-15 23:29:30][btc_node::network::handshake][INFO] handshake | End
+[2024-05-15 23:29:30][btc_node::protocol::messages][INFO] Command: alert
+Payload: ....`.............................................../URGENT: Alert key compromised, upgrade required.F0D. e?..A.G.k.....HA;...,......;.:.R. m..................L.....n.h
+[2024-05-15 23:29:30][btc_node::protocol::messages][INFO] Command: ping
+Payload: A......h
+[2024-05-15 23:29:33][btc_node::protocol::messages][INFO] Command: inv
+Payload: ..?.......$...D...}s..i<.....k./.-t}.IX........h.c........I...H.....N.W...9@.....A&]...=..G.zV.x.y....D.e..?..CS%.....&.....ik....Nd.O.HQ$..j... j{.4.....)c..PA.^.......>s.............6....}SS....m..m...?.OI|..HY.[=.....G...........^... ..A<.z.+.=4........&....a......].....f....vi....>...........%C".l..C..<..8:j........{..{..q.......v..xJ.....F,.../.....u.......2.......*...k8.Fc....w.F..d....Q.
+[2024-05-15 23:29:43][btc_node::protocol::messages][INFO] Command: inv
+Payload: .z]......~..._......6.0.../;.EP.?.....4c|...... ..o.M.|.V.(...q....pXPo.}...?.....wN".G.Qg..p.N.....a*..E..#1...........u.........1N............U........,......6k..........b.w.t[..ZG7..............t....-K.<.v.'.....s2........-....WR.&!....dX..6AIf.Q,......b.....Xh.)h...q|..7..([a.M...[d.....w...........J.....+kA.......d.oq...Sn...........S...A..a@.6......=.0..x.J.....".+\.~.YS..Bq_%]..T....!a.g.`C.....5_..-.a`..p...._B...<...O.x>..y......V.B.Ry.;..!.(.A.s4ef30>...._.4..........V..A..pu.......C..*..../!.........K|..}_.....QT......z.Kq..SF>.....{wi.Q..~.6~...>m.f.q.r..U.4^..K......M....I.....|Q...>.^.T..hW.....!.....3.......N;......f......c.5.@.......0?..x..*...z... .a=.|.'.......?........h...8,z.E..lw..K..... /L.;a.*....`+.[.r:>a........\sQ....l...........:w..pYEI.....Z....M?......`.
+[2024-05-15 23:29:43][btc_node::protocol::messages][INFO] Command: inv
+Payload: ..........RH..j8T...T..!..w.#..d...`=.^*.......^*%.....c...|.z...{.#Gy.k.Y. .....N.a9Q..nv..i..4.)...f]..._.{.z..........,..1..Z...:.d...or......
+[2024-05-15 23:29:49][btc_node::protocol::messages][INFO] Command: inv
+Payload: .Z.......u<.2..[...3rKsdwE..V7.p.-.."..io.....Es..)...`{.%`....RY.P.>.}c..z......>@.L...w...B..dN...OR....2'...1.....|.XA......:(.T.;G.=....+......Q........Z3B.4...JS.iZ....o..#...b.]........R...g>.=_...&!........XF..7...........>...N.>.....Q8..t/.+..z....d....l ...."...F....g8o..^...Jk...-o......h:...(..dUL.o.......g......0j........ ....Df(S.v...;.sXI..z.o5g|\.......i{.{.^x.H..K7..}~.gvb.T...U8.I,....Z`.P..I.....o...dI.... .. pg1.2^.......Z.!1.Z..L...hA.\= ^.0............&O+...}.....=....Q...,..V.@L.H.[.....5^jO.6.wC;.z.".H.n.....m.*...R .....=-../..%{s...Q.L...V...OD".WS.,.......x./.U.......xo..!5W..9A.zp.f............xb/..znu.&..O.*.H....
+[2024-05-15 23:29:50][btc_node::protocol::messages][INFO] Command: inv
+Payload: ...9...........|.`.v.Z?....I....e.&..
+[2024-05-15 23:29:55][btc_node::protocol::messages][INFO] Command: inv
+Payload: K..H......K.Cj,.4K3.j......3......m.g`..............Z.h.....?..Tq.....L....7..........]......c2..a..h..n^....&.......1.D... `..V.Q!Vv..}lGp..)..?L........0...>.....>.e...kx...].c..j-..4....n..{.[H...Pf#).bz...d.zp^~5..............[.V..q.....#......H.#...8?u....dU...1h.$.....>5...R.Z..q.b...X.......u.!.R..myr..1....P..ev...@.........C.^..Yu.p7......g...H.j..z.[.........f.8A...I...8.. QE..X."{P. A=e.......5.g.Z'.6.._..."......$>..Y
+[2024-05-15 23:30:01][btc_node::protocol::messages][INFO] Command: inv
+Payload: ............;;.Nm....*.%.A.$N..b..eK6.W~......*...2...L..:@..9.r.+..o....M_t........E..?RS/.........u!Tp......o.R....[..i..+a..0.U.....7E?x4..y....B.....*.O>..?\.N.2.<C*.91. sV.....F.?E....!.... .B.....B...[..X....g%6G.5N..........._c....".#......6p]..o..r.....|..JV.....Y~.G........m.f"0..c.......b.Qs...0]p..0...f\..(RM$.g(...6.....2;..mi...0,.....$.2..$.A^..V..H....l..C..y..........L.Td.7X_.....J.....;...syG..s.s..{.N...@K...Om5.|......,.....ta..m........._.:)...Y<..F.....pw].!U.0\....._..LJ.ag....!..pY.....Z.....z..6....m6..wF.....*G*I#......b -.#:Z...8.A..>..K....._|j.........S...]r)..u|.e2........}.x.[
+[2024-05-15 23:30:03][btc_node::protocol::messages][INFO] Command: inv
+Payload: |Q............T..1.a..M..e.j+...]O...}g.b.......6.m....S..{g........H...SI.......s.T...@.|...b....7+....h.+(v.b.........-..............3.J....jp....#...........<...f......O..#..D...._~.....v.....Ou$[.B.....Gj%h.(..Cr.e.r.....>j..[&0`.e.iD*.....`.......^
+[2024-05-15 23:30:07][btc_node::protocol::messages][INFO] Command: inv
+Payload: .,.......[L..B.....`./....=L..o?F.t.....i.........+B". ....}.\v..l.....5>.?.#...........f..I......f..O.M.=......C.........vZV.j...{....s.B.{...J`........I..o..t..wn....T..!..ih......6P..........^....D...p...<K.i.r....d5L......n\/.?U.B.s.Ng...WAc.xdP...D..:B...........%7...]....(..e....8....y.......KtD..(.....`.1...$p-..A.3._..Y....hy..D.Q|...9.B... #oj.)...z]".,.....V..G.3U.l..n9>.......u.v.W._........A..V....s..<.0.yP..i.V.I.._...........I..m..q .C..u(S..e..Mr=*..
+[2024-05-15 23:30:21][btc_node::protocol::messages][INFO] Command: inv
+Payload: .s~.#.....Q..6'aC.B.9........}.\....T.L.n....>.G1d..f....S.Z.<.!..................aK.....3t.y.<.....w...\...0hl.$....z..!.,)..C{.D.r..~(b..a.............Qo..:..7.x.'.F..u. ....H....!.{......Q.>.e..o ..>.0....+...F..N89E.......EqNP.....Z.....}.....~%...Yl..{......c..8'.......)....fc...{..o.N" .......X|..E....2.y....0.....>.J..................=...M)uo.;.=.Hk...M...........#.w..^..9......$.T.LP......{............P.M..tz.M~DK../RP....s{......!...w<Y.. .^.V....$1...r-.bC.=.....A...K..]......s7#.....sm7..)...........{q.....N?..."$PF.K..U.,..dL......... ..,k.C`.L."..........L...c. .....=9....7..<*.VbP..oz)...^.D.}LA\.....(&1...L4..Hq#..S...../......x.z.....1bJ...g.k...p.......^.;[eS..-.!.........;...8u.$..V'.....-....l.............7.TGj_..,.K....l.DP...;.b......e!..........Q....L..?q./..N._.Vf......'[[..g.%.^.~/.v.$.;.Nxm;t@4........f...g..&......oD............~;.....h..L.+..P.Z.:.......(,.D.]Xz...P.......c.S.g......@.....b...l...+.h}.......F......8..f?.[)..7...............s...(Z.H..n..k..#m..O.[vu..`@..t......E..<...W%....b.Q.:...w..jX>.$.....9..DJ.<.....O..."...I.>...#.W.<........5.|...S.x...EC"5 4....}_.a=..........rO.. 3.GM..hC..CB5...j.1.v~6..........4.c[..gE@.. ..@........h.......*. ......".'....k.+.0|}.]..U.b.....,8J..J<..8..2....T.=...X\.3W
+[2024-05-15 23:30:24][btc_node::protocol::messages][INFO] Command: inv
+Payload: .._......u#...cd...Y....../=....,.FI.f..a.............FRv.......l..gb.....t.b....../..\9...?............Lb..h.%......E.:yP.Xn....0.v...).w....p....?....._...@4....d.E+..v\-O&....Y;I..R......|.e.I.O.J.z...>A.&......Z..............v..L...bt0Y...`.l/y.j..P..=.........3.{....L;$.>`....<....,...B.....W.\'..."|.3F..J...+...T)..1~...........(....\.^....J49..Q.N&..(...V2......B[....X..8c...|E..?#1W..W6..T..........U4..nW.Y.....<.o.....Q..YG.........b..!..`."..?......SI:...
+[2024-05-15 23:30:26][btc_node::protocol::messages][INFO] Command: inv
+Payload: ...}.....1..].].V.......5..w...H.=..l
+[2024-05-15 23:30:36][btc_node::protocol::messages][INFO] Command:
+Payload:
+[2024-05-15 23:30:36][btc_node::network::connection][ERROR] Failed to read messages: Connection Error: Connection closed by peer
+[2024-05-15 23:30:36][btc_node::network::node][ERROR] Error handling connection to 143.110.238.129: 8333: Connection Error: Connection closed by peer
+[2024-05-15 23:30:36][btc_node::network::node][INFO] Sleeping for 5 seconds before connection to another node
+[2024-05-15 23:30:41][btc_node::network::node][INFO] Trying to connect to 94.23.248.168:8333
+[2024-05-15 23:30:41][btc_node::network::node][INFO] Connected to 94.23.248.168:8333
+[2024-05-15 23:30:41][btc_node::network::handshake][INFO] handshake | Start by sending our version message
+[2024-05-15 23:30:41][btc_node::network::handshake][INFO] handshake | Receive version and services list
+[2024-05-15 23:30:41][btc_node::network::handshake][INFO] handshake | Check if version compatibility: 70015
+[2024-05-15 23:30:41][btc_node::network::handshake][INFO] handshake | Send verack to complete
+[2024-05-15 23:30:41][btc_node::network::handshake][INFO] handshake | End
+[2024-05-15 23:30:41][btc_node::protocol::messages][INFO] Command: ping
+Payload: .zA...."
+[2024-05-15 23:30:41][btc_node::protocol::messages][INFO] Command: addr
+Payload: ..P...)Ef....................^.
+[2024-05-15 23:30:41][btc_node::protocol::messages][INFO] Command:
+Payload:
+[2024-05-15 23:30:41][btc_node::network::connection][ERROR] Failed to read messages: Connection Error: Connection closed by peer
+[2024-05-15 23:30:41][btc_node::network::node][ERROR] Error handling connection to 94.23.248.168: 8333: Connection Error: Connection closed by peer
+[2024-05-15 23:30:41][btc_node::network::node][INFO] Sleeping for 5 seconds before connection to another node
+[2024-05-15 23:30:46][btc_node::network::node][INFO] Trying to connect to 159.89.18.80:8333
+[2024-05-15 23:30:46][btc_node::network::node][INFO] Connected to 159.89.18.80:8333
+[2024-05-15 23:30:46][btc_node::network::handshake][INFO] handshake | Start by sending our version message
+[2024-05-15 23:30:46][btc_node::network::handshake][INFO] handshake | Receive version and services list
+[2024-05-15 23:30:46][btc_node::network::handshake][INFO] handshake | Check if version compatibility: 70015
+[2024-05-15 23:30:46][btc_node::network::handshake][INFO] handshake | Send verack to complete
+[2024-05-15 23:30:46][btc_node::network::handshake][INFO] handshake | End
+[2024-05-15 23:30:46][btc_node::protocol::messages][INFO] Command: ping
+Payload: b#.j....
+[2024-05-15 23:30:46][btc_node::protocol::messages][INFO] Command: addr
+Payload: ...n..)Ef.....................Y
+[2024-05-15 23:30:47][btc_node::protocol::messages][INFO] Command:
+Payload:
+[2024-05-15 23:30:47][btc_node::network::connection][ERROR] Failed to read messages: Connection Error: Connection closed by peer
+[2024-05-15 23:30:47][btc_node::network::node][ERROR] Error handling connection to 159.89.18.80: 8333: Connection Error: Connection closed by peer
+[2024-05-15 23:30:47][btc_node::network::node][INFO] Sleeping for 5 seconds before connection to another node
+[2024-05-15 23:30:52][btc_node::network::node][INFO] Trying to connect to 143.110.238.129:8333
+[2024-05-15 23:30:52][btc_node::network::node][INFO] Connected to 143.110.238.129:8333
+[2024-05-15 23:30:52][btc_node::network::handshake][INFO] handshake | Start by sending our version message
+[2024-05-15 23:30:52][btc_node::network::handshake][INFO] handshake | Receive version and services list
+[2024-05-15 23:30:52][btc_node::network::handshake][INFO] handshake | Check if version compatibility: 70015
+[2024-05-15 23:30:52][btc_node::network::handshake][INFO] handshake | Send verack to complete
+[2024-05-15 23:30:52][btc_node::network::handshake][INFO] handshake | End
+[2024-05-15 23:30:52][btc_node::protocol::messages][INFO] Command: alert
+Payload: ....`.............................................../URGENT: Alert key compromised, upgrade required.F0D. e?..A.G.k.....HA;...,......;.:.R. m..................L.....n.h
+[2024-05-15 23:30:52][btc_node::protocol::messages][INFO] Command: ping
+Payload: r...=(|.
+[2024-05-15 23:30:58][btc_node::protocol::messages][INFO] Command: inv
+Payload: /R..........tQ2.......d...Bd..(.p~eI....&....^7.W..6G..(......]fS6...O../.ms......r_]..j*A8...........;..f<-6:.Q......A..E........Ov.5O....q|. .L.=......K>If...aCC....[qR.@.i..O....O|`.......|X..x....-.2$(.....h..r..,D..[....bg^....4..#.0K.C..|...ps.'..r:.............e......<...-Z..P..V.s'........E..b.o........!..E.}.i......q........m..7...!j.W....^...........q............L.............m...(...d........>.e.wR.H(!...'...TM(..6..}#7Pr......A?M.r...g.b..H.0#......ij..
+[2024-05-15 23:31:20][btc_node::protocol::messages][INFO] Command: inv
+Payload: .Z.4#........AY....K.d.y.@.P..Tt~......m.....u.(...D......<s...V|...[.r.;.5........\..........+^ .P./G.a.....{.......{'..p.;...p..`.'V.xr....J\.fY".k......i.q..8....%.&..8..[.....#.l`V(......K...u\....V.8j....>`..n....0.......F....#....,... ..[.f.....K.R.......7y,.O.$nKW3.s.G[...Y8......l.\...........)49P..\.....xYny,..._&..ij"......q!|.AAq..;..ve|.pc..........Rq.....W...C..~.c.U......b.\.0.Rp..(......z...>.w..%....../\...G.....8..._....*.<q....A.wj.)cD..;I.j..R..q........:.....6.0..*.d$$ .V.....[(-cGC31......{..".y....Y.....r.:nwS,.._.x......k..^......'.G....u..d..A.S.#.1&......w..V.........vjI.$%.................9\kM...s[v.7..f....Q.........B.....%.2....RN.....i}...|~......d<6&t....D.....)?..,.br........).t...l/.>.........X.v..b.Z.A0.sL.zEb.M.D...R.......I.T.......'..\..X.,....{.#..,z.....V8.9..(...C....w........SD56D......q.T.....V..%M.....C.....w.-9.........z..Q.......&QY..c...aY3..>;C.E=.....4Q.o....A.GO.`.K....i.C(...FvX"......7.@.@d..E3^.+..z.S..v...F..|.j.........H.|......@....'F.[\I..._.j:....xY......0.....7w..m."....>%..k&O.......zi/-.~../T.yf..(...4..y.|..........2.....2....^ I:.V..6Ol.M..+.......G|ItJ....EV|.K.$...h................Z...).T..x.+s](..5....s........E............!......Y.$.T....&.L.4g.........<I..Ly..mQ%...-..rS*.....
+[2024-05-15 23:31:31][btc_node::protocol::messages][INFO] Command: inv
+Payload: ..p.#....._.>7_..%.uQ....x...^....pQ...T.......&<...\...m.Z...W..o...MR...[.0....s.....+.NC._..U.i..B..B.I..8M.........54.>.;...I...3....>b...6.H.RI.....0.s..,...C.hl...a.|3x4R.JAV*...........e.._..ovf.(.0 <eb......A.........B..8...M.f......@../ZL....~...:.....+..,..9...TY_..V......S..../.-......'.X.}9Y7.......v..&...h.Kf..h..B.....E.cT@..O..j.\...<........g.Z..%.........y .b..=..N...*.....Y...A.A2.....6?.../p.b... ..N.@.D..k...J...[......z..G...9./.<....Co@.hF.I..(x_.........h..Y..,`:XN.....A..Fd....8 .........)i.4......D..3......If..oK.......3....]..K....5.(.&...+8..M].a........d.oD.h.2..cH....,T.xE........H......R..H..3.._.V.;.n...!+A.:/F...}....e.hR.p..5..x(...!....I.c..?{.74............`k......9E..2U.A!......g.....Ek..A.1|...........H2b..b.-...j ......... .={M.-...Vx..Vv...n...........r.r.........NP.....Kz.F".....{S.......NJ..N..)*S|wK.Z(..q:...n.;M.......<.jVW4...<.........:NmJd.%...........f...s&....0..;....=9....z|..........O=.g...+F.pJR'..Q6F.EI..0..S.........C...@.q....?.,....c...B.j.s..........~.AF .@..R.Jx\ciS..(..%&..c.........^%NC.,Z......4......K.....WFh....4.h.X..w....E=5.........YV[-...........$^{Du..}...3q..M...y...y..X..........:....M7t..<...1x].......1..T....W/U..2S..g./X.J}.]....vr.l....yh............nC%...#....(....c...
+[2024-05-15 23:31:38][btc_node::protocol::messages][INFO] Command: inv
+Payload: sp............$.@s.Nn.%...4..^........T#v....=b...b......)]..5.C.AC`u<................5."'.C%....IM.Im*%ck.....5.......EX.ar<f.....d....'.yA..Xr.........E.r..hJ.M..x.......M....Yf...o|^......*)).....{......*.w.......u.&......X.B....../D..)...c...D,.......z.....%*.p....L....Sf.4% ...\/=...E.........B.w.....K.]D7[C....X.........C......5..1......s@.|...j"0]t..*In.O........46k..G3." .5#.E...Z.....f..e;.......V.4..~"`....p..0..aM..H(..u.}.......}2..&.,....C.U....L......$..7......C.OG....2<...46)g.[.{..X.[.|......;m I...B.t.B.....S.j......(#..Sr....Vy..#.S.(...S!....6....F.IP..>.7.....-..}...kZ .*....9..*..]y..3........Y.9...O..#.0..S.s..i..[.....BIC.....(...<.j..-..~.U.k...................LX.K.F.2|bc..'<..`...0o..Vy..../....X~...J.s....K...b..x..T...t.8........*[..F......d.B[..K2 .v..P{Y.........m..~..=E..Sn~...e.a.*k..&..P.......;&.9..y...l..%k*...]..0...7...$......6..J...g..,.......H.Cs...q<M.................f.Ca......VI..B...@j.t.....(u..?{&.f.r.....k...........[.........R...............`..5.A.m.

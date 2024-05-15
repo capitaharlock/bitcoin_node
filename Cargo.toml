@@ -1,0 +1,16 @@
+[package]
+name = "bitcoin_node"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitcoin = "0.32"
+rand = "0.8"
+dotenv = "0.15.0"
+log = "0.4"
+fern = "0.6"
+chrono = "0.4"
+tokio = { version = "1.37", features = ["full"] }
+
+[workspace]
+members = ["./"]
